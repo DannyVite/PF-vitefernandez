@@ -305,10 +305,6 @@ menu {
 
 }
 
-/* ---ocultar scroll--- */
-::-webkit-scrollbar {
-    display: none;
-}
 
 .profesor {
     display: flex;
@@ -371,16 +367,21 @@ menu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .aboutus {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 350px;
     text-align: center;
-    margin: 40px;
+    margin: 30px;
 
+}
+
+.aboutus__descrip {
+    margin:30px
 }
 
 .aboutus__mensaje {
@@ -587,6 +588,9 @@ label {
     line-height: 30px;
 }
 
+.dondeestamos{
+    margin-top: 20px;
+}
 
 
 
@@ -607,7 +611,9 @@ label {
 /* RESPONSIVE Min-WIDTH */
 /* Home Menu */
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width:768px) {
+
     .logo {
         margin-left: 50px;
     }
@@ -686,27 +692,27 @@ label {
         display: none;
     }
 
+
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:814px) {
 
-
+    p {
+        font-size: 18px;
+    }
 
     /* ---main Home--- */
 
     .container {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 50px;
-
     }
 
     .servicios {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 200%;
 
     }
 
@@ -715,112 +721,175 @@ label {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        padding: 0;
-    }
-
-    .servicios__info {
-        width: 80%;
-        text-align: justify;
-    }
-
-    .mapa__info {
-        font-size: 18px;
-        justify-content: center;
-        align-items: center;
     }
 
     .image {
-        background-color: aqua;
-        width: 320px;
-        height: 320px;
-        border-radius: 150px;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
     }
 
-    /* layout coaching */
-    .coaching__title{
-        font-size: 48px;
-        margin-bottom: 10px;
+
+
+    @media screen and (max-width:714px) {
+
+        /* --- layout generelaes */
+
+
+        p {
+            font-size: 20px;
+        }
+
+        h3{
+            font-size: 20px;
+        }
+
+        header {
+            background-position: 26%;
+        }
+
+        .mapa__descrip {
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+
+        .button1 {
+            margin-bottom: 20px;
+        }
+
+        /* Menu bars */
+
+        .nav-menu {
+            width: 87%;
+        }
+
+     /* LAYOUT PÁGINAS */
+      /* layout aboutus */
+    
+        .aboutus {
+            max-width: 200px;
+            height: 880px;
+            font-size: 20px;
+        }
+
+        .aboutus__descrip {
+            max-width: 350px;
+        }
+
+
+        /* layout servicios */
+
+        }
+        /* layout coaching */
+        .coaching__title {
+            font-size: 48px;
+            margin-bottom: 10px;
+
+        }
+
+        .coaching__descrip {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .contenedor_coaching {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .coaching__imagen {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .coaching__info {
+            padding: 30px;
+            text-align: center;
+        }
+
+
+        /* layout contacta */
+
+        .form-area {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            justify-content: center;
+        }
+
+        .mapa__info{
+            max-width: 200px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .msg-area {
+            max-width: 18em;
+            min-height: 25em;
+            order: 1;
+
+        }
+
+
+        .details-area input {
+            width: 100%;
+            background: transparent;
+            color: black;
+            border-radius: 40px;
+        }
+
+        .details-area button {
+            padding: 1em;
+            margin-bottom: 1em;
+        }
+
+
+        label {
+            color: black;
+            text-transform: uppercase;
+            line-height: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+
+        /* footer */
         
+        .chess_container {
+            display: flex;
+            flex-direction: column;
+            height: 870px;
+            font-size: 18px;
+
+        }
+
+        .chess__rrss {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+        }
+
+        .chess_info {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+           margin-bottom: 40px;
+        }
+
+
     }
-    .coaching__descrip{
-       font-size: 30px;
-       margin-top: 15px;
-    }
-   
-    .contenedor_coaching {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-   
-    }
-   
-    .coaching__imagen {
-        margin: 20px;
-        padding: 20px;
-    }
-   
-    .coaching__info{
-        padding: 30px;
-        text-align: center;
-    }
-
-
-    /* layout contacta */
-
-.form-area {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    justify-content: center;
-}
-
-.msg-area {
-    max-width: 20em;
-    min-height: 20em;
-    order: 1;
-
-}
-
-
-.details-area input {
-    width: 100%;
-    background: transparent;
-    color: black;
-    border-radius: 40px;
-}
-
-.details-area button {
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-
-label {
-    color: black;
-    text-transform: uppercase;
-    line-height: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-
-    /* footer */
-    .chess_links{
-        margin-top: 30px;
-    }
-    .chess_info {
-        display: flex;
-        flex-direction: row;
-        
-    }
-
-    .chess__rrss li{
-        margin-top: 20px;
-}
-
-    h3 {
-        font-size: 24px;
-    }
-
-
-}
