@@ -701,6 +701,12 @@ label {
     .servicios {
         display: flex;
         flex-direction: column;
+    }
+
+    .servicios__info {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
 
     }
 
@@ -712,6 +718,8 @@ label {
     }
 
     .image {
+        display: flex;
+        flex-direction: column;
         width: 200px;
         height: 200px;
         border-radius: 200px;
@@ -768,13 +776,13 @@ label {
         /* layout aboutus */
 
         .aboutus {
-            max-width: 200px;
+            max-width: 250px;
             height: 880px;
             font-size: 20px;
         }
 
         .aboutus__descrip {
-            max-width: 350px;
+            max-width: 300px;
         }
 
 
