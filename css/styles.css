@@ -1,3 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+h3 {
+  color: white;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
 /*Banner text*/
 .banner-text-home {
   padding: 0 30px;
@@ -122,44 +155,6 @@ menu {
   margin: 80px;
 }
 
-/* layout slider Home */
-.marketing {
-  background-color: red;
-  color: #fff;
-  text-align: center;
-  padding: 0;
-  text-transform: uppercase;
-}
-
-.slider {
-  width: 100%;
-  display: flex;
-  margin-bottom: 80px;
-  padding: 20px;
-  overflow: auto;
-}
-
-.profesor {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  justify-content: baseline;
-  align-items: center;
-}
-
-.profesor__info {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  line-height: 30px;
-}
-
-.image__slider {
-  width: 220px;
-  height: 220px;
-  border-radius: 150px;
-}
-
 /* layout mapa home */
 .mapa__chess {
   display: flex;
@@ -188,6 +183,40 @@ menu {
   font-size: 18px;
 }
 
+/* ---main Home--- */
+@media screen and (max-width: 814px) {
+  p {
+    font-size: 18px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios__info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  .historia {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+  }
+}
 /* LAYOUT CONTACTO */
 .contacto {
   width: auto;
@@ -201,6 +230,123 @@ menu {
 .mapa__title {
   margin: 20px;
   text-align: center;
+}
+
+/* LAYOUT ABOUT */
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 350px;
+  text-align: center;
+  margin: 30px;
+}
+
+.aboutus__descrip {
+  margin: 30px;
+}
+
+.aboutus__mensaje {
+  font-family: "Dancing Script", cursive;
+  padding: 30px;
+}
+
+/* LAYOUT COACHING  */
+.contenedor_coaching {
+  display: grid;
+  grid-template-columns: 40vw auto;
+  margin: 40px;
+  padding: 40px;
+}
+
+.coach__info {
+  margin: 20px;
+}
+
+.coaching__imagen {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  margin: 20px;
+}
+
+/*footer links*/
+.chess_links {
+  background-color: #0b0a0a;
+  font-size: 12px;
+  padding: 25px 0;
+}
+
+.chess_container {
+  font-size: 13px;
+  margin: 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.chess_info {
+  display: grid;
+  grid-column: 1fr 1fr;
+}
+
+.chess_container ul {
+  margin: 0 auto;
+}
+
+.chess_container ul li {
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+
+.chess__rrss li {
+  cursor: pointer;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+.chess__rrss li .fa {
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.chess__descrip {
+  font-size: 13px;
+  margin: 30px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.dondeestamos {
+  margin-top: 20px;
+}
+
+/*FOOTER*/
+.footer {
+  background: #cecece;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .form-area {
@@ -248,52 +394,6 @@ label {
   text-transform: uppercase;
   line-height: 40px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
-/* LAYOUT ABOUT */
-.nosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.aboutus {
-  display: flex;
-  flex-direction: column;
-  width: 700px;
-  height: 350px;
-  text-align: center;
-  margin: 30px;
-}
-
-.aboutus__descrip {
-  margin: 30px;
-}
-
-.aboutus__mensaje {
-  font-family: "Dancing Script", cursive;
-  padding: 30px;
-}
-
-/* LAYOUT COACHING  */
-.contenedor_coaching {
-  display: grid;
-  grid-template-columns: 40vw auto;
-  margin: 40px;
-  padding: 40px;
-}
-
-.coach__info {
-  margin: 20px;
-}
-
-.coaching__imagen {
-  width: 300px;
-  height: 300px;
-  border-radius: 150px;
-  margin: 20px;
 }
 
 .bar-btn {
@@ -430,75 +530,73 @@ nav {
   display: block;
 }
 
-/*footer links*/
-.chess_links {
-  background-color: #0b0a0a;
-  font-size: 12px;
-  padding: 25px 0;
-}
-
-.chess_container {
-  font-size: 13px;
-  margin: 0px 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.chess_info {
-  display: grid;
-  grid-column: 1fr 1fr;
-}
-
-.chess_container ul {
-  margin: 0 auto;
-}
-
-.chess_container ul li {
-  color: #fff;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-}
-
-.chess__rrss li {
-  cursor: pointer;
-  border: 5px solid white;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  margin: 0 10px;
-  text-align: center;
-  float: left;
-  transition: all 0.5s ease;
-}
-
-.chess__rrss li .fa {
-  color: white;
-  transition: all 0.5s ease-in-out;
-}
-
-.chess__descrip {
-  font-size: 13px;
-  margin: 30px;
-  text-align: justify;
-  line-height: 30px;
-}
-
-.dondeestamos {
-  margin-top: 20px;
-}
-
-/*FOOTER*/
-.footer {
-  background: #cecece;
-  font-size: 12px;
-  padding: 20px 0;
-  text-align: center;
-  padding-bottom: 20px;
+/* RESPONSIVE Min-WIDTH */
+/* Home Menu */
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 50px;
+  }
+  nav {
+    height: 100px;
+  }
+  .bar-btn {
+    display: none;
+  }
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  .nav-menu li a {
+    font-size: 12px;
+  }
+  .banner-text-home h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .banner-text-home h2 {
+    font-size: 20px;
+  }
+  .pages {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .pages_titulo {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .pages_titulo li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
+  }
+  .pages_titulo li a {
+    font-size: 12px;
+  }
+  .bar-button {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

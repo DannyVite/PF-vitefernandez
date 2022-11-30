@@ -1,0 +1,38 @@
+
+.marketing {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.profesor {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.profesor__info {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+
+.image__slider {
+    width: 220px;
+    height: 220px;
+    border-radius: 150px;
+}

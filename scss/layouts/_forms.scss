@@ -1,0 +1,46 @@
+.form-area {
+    width: 600px;
+    display: flex;
+    padding: 1.9em;
+    justify-content: center;
+}
+
+.msg-area {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.msg-area>textarea {
+    flex: 1;
+    min-width: 13em;
+    background: transparent;
+    color: black;
+    padding: 15px;
+}
+
+.details-area {
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+
+.details-area input {
+    width: 100%;
+    background: transparent;
+    color: black;
+    border-radius: 40px;
+}
+
+.details-area input,
+.details-area button {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+label {
+    color: black;
+    text-transform: uppercase;
+    line-height: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

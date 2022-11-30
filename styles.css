@@ -592,10 +592,6 @@ label {
     padding-bottom: 20px;
 }
 
-
-/*RESPONSIVE begins*/
-
-
 /* RESPONSIVE Min-WIDTH */
 /* Home Menu */
 
@@ -682,6 +678,9 @@ label {
 
 
 }
+
+
+
 
 @media screen and (max-width:814px) {
 

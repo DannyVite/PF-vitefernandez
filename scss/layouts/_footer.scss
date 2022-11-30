@@ -1,0 +1,80 @@
+/*footer links*/
+
+.chess_links {
+    background-color: #0b0a0a;
+    font-size: 12px;
+    padding: 25px 0;
+
+}
+
+.chess_container {
+    font-size: 13px;
+    margin: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.chess_info {
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+
+.chess_container ul {
+    margin: 0 auto;
+}
+
+.chess_container ul li {
+    color: #fff;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+
+}
+
+.chess__rrss li {
+    cursor: pointer;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 10px;
+    text-align: center;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.chess__rrss li .fa {
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.chess__descrip {
+    font-size: 13px;
+    margin: 30px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.dondeestamos {
+    margin-top: 20px;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+    background: #cecece;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
