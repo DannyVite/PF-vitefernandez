@@ -1,0 +1,29 @@
+/* LAYOUT ABOUT */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 350px;
+    text-align: center;
+    margin: 30px;
+
+}
+
+.aboutus__descrip {
+    margin: 30px
+}
+
+.aboutus__mensaje {
+    font-family: 'Dancing Script', cursive;
+    padding: 30px;
+}
+

@@ -1,0 +1,22 @@
+/* LAYOUT COACHING  */
+
+.contenedor_coaching {
+    display: grid;
+    grid-template-columns: 40vw auto;
+    margin: 40px;
+    padding: 40px;
+}
+
+
+.coach__info {
+    margin: 20px;
+
+}
+
+.coaching__imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 20px;
+
+}
